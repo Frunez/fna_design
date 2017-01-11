@@ -37,7 +37,7 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
-#homeHeading {
+h1#homeHeading {
   color: #F05F40;
 }
 p {
