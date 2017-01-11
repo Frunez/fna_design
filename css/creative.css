@@ -157,7 +157,7 @@ header {
   background-position: center;
   background-image: url('../img/header.jpg');
   text-align: center;
-  color: white;
+  color: #193c8b;
 }
 header .header-content {
   position: relative;
