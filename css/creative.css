@@ -1,4 +1,4 @@
-rgb(20, 25, 163)/*!
+/*!
  * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -129,7 +129,6 @@ aside {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
   }
-
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #2661e6;
     font-size: 14px;
@@ -158,12 +157,7 @@ header {
   background-position: center;
   background-image: url('../img/header.jpg');
   text-align: center;
-  color: #193c8b !important;
-}
-header img {
-  padding: 10px;
-  border-radius: 15px;
-  background-color: rgba(12, 13, 13, 0.91);
+  color: white;
 }
 header .header-content {
   position: relative;
@@ -183,12 +177,9 @@ header .header-content .header-content-inner hr {
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
-  color: #2661e6;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: rgba(12, 13, 13, 0.91);
 }
 @media (min-width: 768px) {
   header {
