@@ -3,6 +3,39 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+/* Bars */
+.img {
+	  width: auto;
+    height: auto;
+    position: relative;
+	  background-image: url("../img/portfolio/thumbnails/1.jpg");
+    background-position: center;
+    background-size: cover;
+    clip-path: inset(0px 0px 0px 0px);
+}
+.bars {
+    width: 1000px;
+    height: 300px;
+}
+
+.bars:hover {
+    width: 1000px;
+    height: 300px;
+    background-image: repeating-linear-gradient(
+  		-45deg,
+  		rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0), 50px,
+      #2661e6, 25px,
+  		#2661e6 100px);
+    position: relative;
+    animation: myfirst 3s linear 0s infinite;
+    transform: translateX(-285px);
+}
+@keyframes myfirst {
+    0%   {left:0px; top:0px;}
+    100% {left:285px; top:0px;}
+}
+
 html,
 body {
   height: 100%;
@@ -70,10 +103,9 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #2661e6;
+  color: #222222;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
@@ -159,6 +191,11 @@ header {
   text-align: center;
   color: white;
 }
+header img {
+  border-radius: 15px;
+  padding: 11px;
+  background-color: rgba(20, 19, 19, 0.89);
+}
 header .header-content {
   position: relative;
   text-align: center;
@@ -227,13 +264,14 @@ header .header-content .header-content-inner p {
   position: relative;
   display: block;
   max-width: 650px;
+  max-height: 300px;
   margin: 0 auto;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(31, 49, 213, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -301,9 +339,10 @@ header .header-content .header-content-inner p {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #222222;
-  background-color: #f2f2f2;
-  border-color: #ededed;
+  color: white;
+  background-color: #26397c;
+  border-color: white;
+  padding: 15px 30px;
 }
 .btn-default:active,
 .btn-default.active,
@@ -350,8 +389,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
+  background-color: #4e7add;
+  border-color: #4e7add;
+  padding: 15px 30px;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -386,12 +426,12 @@ fieldset[disabled] .btn-primary.active {
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
-  border-radius: 300px;
+  border-radius: 7px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .btn-xl {
-  padding: 15px 30px;
+  padding: 10px 10px;
 }
 ::-moz-selection {
   color: white;
