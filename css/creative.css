@@ -4,17 +4,42 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 /* Bars */
+.logo {
+    animation: rotate 5s linear 0s infinite;
+}
+@keyframes rotate {
+    0%   {transform: rotate(0deg);}
+    100%   {transform: rotate(360deg);}
+}
+
 .img {
 	  width: auto;
     height: auto;
     position: relative;
-	  background-image: url("../img/portfolio/thumbnails/1.jpg");
     background-position: center;
     background-size: cover;
     clip-path: inset(0px 0px 0px 0px);
 }
+.img1 {
+  	background-image: url("../img/portfolio/thumbnails/1.jpg");
+}
+.img2 {
+  	background-image: url("../img/portfolio/thumbnails/2.jpg");
+}
+.img3 {
+  	background-image: url("../img/portfolio/thumbnails/3.jpg");
+}
+.img4 {
+  	background-image: url("../img/portfolio/thumbnails/4.jpg");
+}
+.img5 {
+  	background-image: url("../img/portfolio/thumbnails/5.jpg");
+}
+.img6 {
+  	background-image: url("../img/portfolio/thumbnails/6.jpg");
+}
 .bars {
-    width: 1000px;
+    width: auto;
     height: 300px;
 }
 
@@ -25,15 +50,15 @@
   		-45deg,
   		rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0), 50px,
-      #2661e6, 25px,
-  		#2661e6 100px);
+      white, 25px,
+  		white 100px);
     position: relative;
-    animation: myfirst 3s linear 0s infinite;
+    animation: bars 3s linear 0s infinite;
     transform: translateX(-285px);
 }
-@keyframes myfirst {
-    0%   {left:0px; top:0px;}
-    100% {left:285px; top:0px;}
+@keyframes bars {
+    0%   {left:0px;}
+    100% {left:285px;}
 }
 
 html,
