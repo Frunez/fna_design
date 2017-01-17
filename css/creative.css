@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 /* Bars */
+
 .logo {
     animation: rotate 5s linear 0s infinite;
 }
@@ -24,24 +25,7 @@
     -o-clip-path: inset(0px 0px 0px 0px);
     clip-path: inset(0px 0px 0px 0px);
 }
-.img1 {
-  	background-image: url("../img/portfolio/thumbnails/1.jpg");
-}
-.img2 {
-  	background-image: url("../img/portfolio/thumbnails/2.jpg");
-}
-.img3 {
-  	background-image: url("../img/portfolio/thumbnails/3.jpg");
-}
-.img4 {
-  	background-image: url("../img/portfolio/thumbnails/4.jpg");
-}
-.img5 {
-  	background-image: url("../img/portfolio/thumbnails/5.jpg");
-}
-.img6 {
-  	background-image: url("../img/portfolio/thumbnails/6.jpg");
-}
+
 .bars {
     width: auto;
     height: 300px;
@@ -73,6 +57,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
@@ -225,7 +211,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-image: url('../img/header.jpg');
+  /*background-image: url('../img/header.jpg');*/
   text-align: center;
   color: white;
 }
